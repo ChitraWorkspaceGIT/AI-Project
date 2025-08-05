@@ -116,13 +116,14 @@ data_true["label"] = 1
 ```
 ```data_fake.shape, data_true.shape```
 ```
-data_fake_manual_testing = fake.tail(10)
-for i in range(23480,23470,-1):
-    data_fake.drop([i], axis = 0, inplace = True)
-    
-data_true_manual_testing = true.tail(10)
-for i in range(21416,21406,-1):
-    data_true.drop([i], axis = 0, inplace = True)
+data_fake_manual_testing = data_fake.tail(10)
+for i in range(23480, 23470, -1):
+    data_fake.drop([i], axis=0, inplace=True)
+
+data_true_manual_testing = data_true.tail(10)
+for i in range(21416, 21406, -1):
+    data_true.drop([i], axis=0, inplace=True)
+
 ```
 ```data_fake.shape, data_true.shape```
 ```
