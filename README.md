@@ -133,8 +133,8 @@ data_true_manual_testing["label"] = 1
 ```data_fake_manual_testing.head(10)```
 ```data_true_manual_testing.head(10)```
 ```
-manual_testing = pd.concat([fake_manual_testing,true_manual_testing], axis = 0)
-manual_testing.to_csv("manual_testing.csv")
+manual_testing = pd.concat([data_fake_manual_testing, data_true_manual_testing], axis=0)
+manual_testing.to_csv("manual_testing.csv", index=False)
 ```
 __Merge both datasets__
 ```
