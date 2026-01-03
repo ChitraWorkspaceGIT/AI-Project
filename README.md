@@ -435,7 +435,7 @@ __10.1 Create GitHub Repo__
 
 Go to https://github.com
 
-Create new repo: GEN-AI-PROJECT
+Create new repo: AI-PROJECT
 
 In terminal
 ```
