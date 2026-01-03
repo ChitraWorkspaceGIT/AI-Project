@@ -164,15 +164,19 @@ data.columns
 
 __Preprocessing text(cleaning the text)__
 ```
+import re
+
 def clean_text(text):
-    text = text.lower()  
+    if not isinstance(text, str):
+        return ""
+    
+    text = text.lower()
     text = re.sub(r'\[.*?\]', '', text)
-    text = re.sub(r'https?://\S+|www\.\S+', '', text) 
-    text = re.sub(r'<.*?>+', '', text) 
-    text = re.sub(r'\n', ' ', text) 
-    text = re.sub(r'\w*\d\w*', '', text)  
-    text = re.sub(r'[^\w\s\?!]', '', text)
-    text = re.sub(r'\s+', ' ', text).strip()
+    text = re.sub(r'https?://\S+|www\.\S+', '', text)
+    text = re.sub(r'<.*?>+', '', text)
+    text = re.sub(r'[^a-zA-Z\s]', '', text)
+    text = re.sub(r'\n', ' ', text)
+    text = re.sub(r'\w*\d\w*', '', text)
     return text
 ```
 ```
