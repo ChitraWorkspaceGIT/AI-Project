@@ -410,6 +410,7 @@ In the terminal:
 #streamlit run app.py
 ```
 Then go to the browser link it gives you (usually http://localhost:8501).
+<img width="1920" height="1080" alt="Screenshot 2026-01-03 112424" src="https://github.com/user-attachments/assets/85066ed2-bfc0-4a6e-9d06-3d398ecfa8ec" />
 
 __9.2 Test the App__
 
