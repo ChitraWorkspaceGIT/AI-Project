@@ -375,6 +375,7 @@ shap_values = explainer(xv_test[:10])  # Use the transformed test data
 
 shap.summary_plot(shap_values, feature_names=vectorizer.get_feature_names_out())
 ```
+<img width="760" height="940" alt="image" src="https://github.com/user-attachments/assets/9ae1cea6-044a-47f2-a015-48c65a17bcd1" />
 
 ### 9. Create the Streamlit App
 
