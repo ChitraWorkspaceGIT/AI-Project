@@ -428,7 +428,7 @@ Activate Virtual Environment
 ```
 __Generate the requirements.txt file__
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 pip freeze > requirements.txt
 ```
 __10.1 Create GitHub Repo__
